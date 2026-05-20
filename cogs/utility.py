@@ -336,7 +336,7 @@ class Utility(commands.Cog):
         embed.set_author(
             name="Modmail - About",
             icon_url=self.bot.user.display_avatar.url if self.bot.user.display_avatar else None,
-            url="https://discord.gg/F34cRU8",
+            url="https://discord.gg/9KX7DyBVDA",
         )
         embed.set_thumbnail(url=self.bot.user.display_avatar.url if self.bot.user.display_avatar else None)
 
@@ -348,8 +348,8 @@ class Utility(commands.Cog):
         embed.add_field(name="Uptime", value=self.bot.uptime)
         embed.add_field(name="Latency", value=f"{self.bot.latency * 1000:.2f} ms")
         embed.add_field(name="Version", value=f"`{self.bot.version}`")
-        embed.add_field(name="Authors", value="`kyb3r`, `Taki`, `fourjr`")
-        embed.add_field(name="Hosting Method", value=self.bot.hosting_method.name)
+        embed.add_field(name="Authors", value="`Jayden`, `Cody`, `Lewis`")
+        embed.add_field(name="Hosting Method", value="`Aspect Hosting`")
 
         changelog = await Changelog.from_url(self.bot)
         latest = changelog.latest_version
@@ -360,26 +360,11 @@ class Utility(commands.Cog):
         elif self.bot.version < Version(latest.version):
             footer = f"A newer version is available v{latest.version}."
         else:
-            footer = "You are up to date with the latest version."
+            footer = "Aspect's Hosting Service"
 
         embed.add_field(
-            name="Want Modmail in Your Server?",
-            value="Follow the installation guide on [GitHub](https://github.com/modmail-dev/modmail/) "
-            "and join our [Discord server](https://discord.gg/cnUpwrnpYb)!",
-            inline=False,
-        )
-
-        embed.add_field(
-            name="Support the Developers",
-            value="This bot is completely free for everyone. We rely on kind individuals "
-            "like you to support us on [`Buy Me A Coffee`](https://buymeacoffee.com/modmaildev) (perks included for memberships) "
-            "to keep this bot free forever!",
-            inline=False,
-        )
-
-        embed.add_field(
-            name="Project Sponsors",
-            value=f"Checkout the people who supported Modmail with command `{self.bot.prefix}sponsors`!",
+            name="Aspect's Hosting Service",
+            value="Aspect's Hosting Service is a service run by <@1155237643223838780> , <@1273363715609198687> and <@1124685735384072213>. If you wish to have a Modmail bot of your own, please contact them. Join https://discord.gg/9KX7DyBVDA",
             inline=False,
         )
 
@@ -412,7 +397,7 @@ class Utility(commands.Cog):
     @checks.has_permissions(PermissionLevel.OWNER)
     @utils.trigger_typing
     async def debug(self, ctx):
-        """Shows the recent application logs of the bot."""
+        """Aspect's Hosting Service"""
 
         with open(self.bot.log_file_path, "r+", encoding="utf-8") as f:
             logs = f.read().strip()
