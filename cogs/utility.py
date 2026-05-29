@@ -364,7 +364,7 @@ class Utility(commands.Cog):
 
         embed.add_field(
             name="Aspect's Hosting Service",
-            value="Aspect's Hosting Service is a service run by <@1155237643223838780> , <@1273363715609198687> and <@1124685735384072213>. If you wish to have a Modmail bot of your own, please contact them. Join https://discord.gg/9KX7DyBVDA",
+            value="Aspect's Hosting Service is a service run by <@1155237643223838780> , <@1273363715609198687> and <@1046472306781868142>. If you wish to have a Modmail bot of your own, please contact them. Join https://discord.gg/9KX7DyBVDA",
             inline=False,
         )
 
